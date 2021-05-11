@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --darkblue: #143642;
+  --green: #b5e48c;
+  --lightblue: #0F8B8D;
+  --orange: #EC9A29;
+  --burgundy: #A8201A;
+}
+
+header {
+  background-color: var(--burgundy);
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button {
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--darkblue);
+  color: white;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+button:hover {
+  background-color: var(--lightblue);
+}
+
+button + button {
+  margin-left: .5rem;
+}
+
+.header-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header-div p {
+  margin-right: 1rem;
+}
+
+div.the-mess {
+  -webkit-box-shadow: 0 0 10px 0 rgba(11, 0, 36, 0.356);
+          box-shadow: 0 0 10px 0 rgba(11, 0, 36, 0.356);
+  width: 1280px;
+  height: 512px;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div.stick {
+  background-color: var(--darkblue);
+  border: 1px solid white;
+}
+
+div.greenStick {
+  background-color: #b5e48c;
+}
+
+div.orangeStick {
+  background-color: var(--orange);
+}
+
+select {
+  font-size: 16px;
+  width: 10rem;
+  padding: 5px 10px;
+  background-color: var(--darkblue);
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+
+select:hover {
+  cursor: pointer;
+  outline: 2px solid var(--lightblue);
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-arrow {
+  background-color: var(--darkblue);
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  height: 100%;
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  /* fuck amazing */
+}
+
+.custom-arrow i {
+  margin: auto;
+}
+
+button.generate-new-array-button i {
+  margin-left: .5rem;
+}
+
+@-webkit-keyframes orangeup {
+  0% {
+    background-color: var(--orange);
+  }
+  100% {
+    background-color: var(--darkblue);
+  }
+}
+
+@keyframes orangeup {
+  0% {
+    background-color: var(--orange);
+  }
+  100% {
+    background-color: var(--darkblue);
+  }
+}
+
+@-webkit-keyframes redup {
+  0% {
+    background-color: var(--burgundy);
+  }
+  100% {
+    background-color: var(--darkblue);
+  }
+}
+
+@keyframes redup {
+  0% {
+    background-color: var(--burgundy);
+  }
+  100% {
+    background-color: var(--darkblue);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
